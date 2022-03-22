@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import AppHeader from './components/AppHeader'
+import Dashboard from './components/Dashboard'
+
+const Container = styled.div`
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(100% 100% at 100% 100%, #6FC3B8 0%, #0972B1 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <AppHeader />
+      <Dashboard />
+    </Container>
   );
 }
 
