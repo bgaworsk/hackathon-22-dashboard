@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import AppHeader from './components/AppHeader'
 import Dashboard from './components/Dashboard'
@@ -14,12 +15,17 @@ const Container = styled.div`
 `
 
 function App() {
+
+  const [ showDashboard, set ] = React.useState(false)
+
   return (
     <Router>
       <Container>
         <AppHeader />
-        <TabBar />
-        <Dashboard />
+        <TabBar dashboardActive={showDashboard} toggle={set}/>
+        {showDashboard ? <Dashboard /> : (
+          <div style={{ backgroundColor: '#ffffff', width: '100vw', height: 'calc(100vh - 92px)' }} />
+        )}
         <RoutesConfiguration />
       </Container>
     </Router>

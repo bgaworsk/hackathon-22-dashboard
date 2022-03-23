@@ -10,7 +10,7 @@ import JobsAndNotifications from '../../mock/JobsAndNotifications'
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: calc(100vh - 52px);
+  height: calc(100vh - 92px);
   overflow-y: scroll;
   padding: 30px 0;
   box-sizing: border-box;
