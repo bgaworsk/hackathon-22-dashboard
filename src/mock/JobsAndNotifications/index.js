@@ -1,7 +1,7 @@
 import React from 'react'
 import Dashlet from '../../components/Dashlet'
 import NotificationsIcon from '@mui/icons-material/Notifications'
-import { IconButton, LinearProgress, Typography } from '@mui/material'
+import { Button, IconButton, LinearProgress, Typography } from '@mui/material'
 import styled from 'styled-components'
 import UploadIcon from '@mui/icons-material/Upload'
 import CancelIcon from '@mui/icons-material/Cancel'
@@ -76,8 +76,16 @@ const JobsAndNotifications = () => {
   }
 
   return (
-    <Dashlet title={"Notifications & Jobs"} avatar={<NotificationsIcon />}>
-      <div style={{ overflowY: 'scroll', maxHeight: '492px', height: '492px'}}>
+    <Dashlet 
+      title={"Notifications & Jobs"} 
+      avatar={<NotificationsIcon />}
+      cardActions={
+        <>
+          <Button size={'small'}>Mark all as read</Button>
+        </>
+      }
+    >
+      <div style={{ overflowY: 'scroll', maxHeight: '453px', height: '453px'}}>
         {showProgress && (
           <>
             <Progress click={handleClick}/>

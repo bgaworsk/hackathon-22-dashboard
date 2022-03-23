@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader'
 import Dashboard from './components/Dashboard'
 import { BrowserRouter as Router } from 'react-router-dom'
 import RoutesConfiguration from './components/RoutesConfiguration'
+import TabBar from './components/TabBar'
 
 const Container = styled.div`
   margin: 0;
@@ -17,6 +18,7 @@ function App() {
     <Router>
       <Container>
         <AppHeader />
+        <TabBar />
         <Dashboard />
         <RoutesConfiguration />
       </Container>
