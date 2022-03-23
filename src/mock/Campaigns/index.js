@@ -16,22 +16,6 @@ const PanelContainer = styled.div`
   }
 `
 
-const TabPanel = (props) => {
-  const { children, value, index, ...other } = props
-
-  return (
-    <PanelContainer
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {children}
-    </PanelContainer>
-  )
-}
-
 const Campaigns = () => {
 
   return (

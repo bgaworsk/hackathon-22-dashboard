@@ -1,12 +1,12 @@
 import { Container, Grid, Typography } from '@mui/material'
 import styled from 'styled-components'
-import Dashlet from '../Dashlet'
 import Search from '../Search'
 import LineChart from '../../mock/LineChart'
 import SunburstChart from '../../mock/SunburstChart'
 import Conversion from '../../mock/Conversion'
 import Workflows from '../../mock/Workflows'
 import Campaigns from '../../mock/Campaigns'
+import JobsAndNotifications from '../../mock/JobsAndNotifications'
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -45,15 +45,28 @@ const Dashboard = () => {
           </Grid>
         </Grid>
         <Grid container spacing={2} mt={0}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <Workflows />
           </Grid>
           <Grid item xs={12} md={6}>
             <Campaigns />
           </Grid>
-          <Grid item xs={12} md={2}>
-            <Campaigns />
-            <Campaigns />
+          <Grid item xs={12} md={3}>
+            <JobsAndNotifications />
+          </Grid>
+        </Grid>
+        <Grid container spacing={2} mt={0}>
+          <Grid item md={6}>
+            <JobsAndNotifications />
+          </Grid>
+          <Grid item md={4}>
+            <JobsAndNotifications />
+          </Grid>
+          <Grid item md={2}>
+            <JobsAndNotifications />
+          </Grid>
+          <Grid item md={4}>
+            <JobsAndNotifications />
           </Grid>
         </Grid>
       </Container>

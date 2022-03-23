@@ -42,13 +42,13 @@ export const Metric = ({ value, title, trend, negative }) => (
     </Typography>
     <Typography variant={'overline'}>{title}</Typography>
     {trend && (
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         {!negative ? (
           <ArrowDropUpIcon color={'success'} fontSize={'large'}/>
         ) : (
           <ArrowDropDownIcon color={'error'} fontSize={'large'}/>
         )}
-        <Typography variant={'overline'}>{trend}</Typography>
+        <Typography variant={'overline'} sx={{ lineHeight: '1.2', fontSize: '11px', width: '70px' }}>{trend}</Typography>
       </div>
     )}
   </Grid>

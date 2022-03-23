@@ -147,6 +147,7 @@ export function total(date, unit) {
     case 'minutes':
       div *= 60
     case 'seconds':
+    default:
       div *= 1000
   }
 
