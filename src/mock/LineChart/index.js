@@ -1,11 +1,10 @@
 import Dashlet from '../../components/Dashlet'
 import { ResponsiveLine } from '@nivo/line'
-import { generateDrinkStats } from '@nivo/generators'
 import StackedLineChartIcon from '@mui/icons-material/StackedLineChart'
+import data from './data.json'
 
 const LineChart = () => {
 
-  const data = generateDrinkStats(18)
   const props = {
     enableSlices: 'x',
     enableArea: true,
@@ -16,11 +15,23 @@ const LineChart = () => {
       type: 'linear',
       stacked: true,
     },
+    axisLeft:{
+      legend: "Page Impressions",
+      legendPosition: "middle",
+      legendOffset: -45,
+      tickValues: 5
+    },
+    margin: { top: 10, right: 20, bottom: 20, left: 50 },
     data
   }
 
   return (
-    <Dashlet title={"Performance"} configLink={"config/card1"} avatar={<StackedLineChartIcon />}>
+    <Dashlet
+      title={"Performance"}
+      configLink={"config/card1"}
+      avatar={<StackedLineChartIcon />}
+      style={{ fontFamily: 'Roboto, sans-serif' }}
+    >
       <div style={{ width: '100%', height: '200px'}}>
         <ResponsiveLine {...props} />
       </div>

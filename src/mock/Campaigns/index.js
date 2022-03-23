@@ -12,6 +12,7 @@ const PanelContainer = styled.div`
   overflow-y: scroll;
   
   .height600 {
+    font-family: Roboto, sans-serif;
     height: 454px;
   }
 `
