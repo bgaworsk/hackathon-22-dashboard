@@ -2,6 +2,7 @@ import Dashlet from '../../components/Dashlet'
 import { Typography } from '@mui/material'
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp'
 import styled from 'styled-components'
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn'
 
 const Container = styled.div`
   height: 200px;
@@ -18,7 +19,7 @@ const Container = styled.div`
 
 const Conversion = () => {
   return (
-    <Dashlet title={"Conversion"} configLink={"config/card1"}>
+    <Dashlet title={"Conversion"} configLink={"config/card1"} avatar={<MonetizationOnIcon />}>
       <Container>
         <Typography variant={"h1"} component={"div"}>
           35 $

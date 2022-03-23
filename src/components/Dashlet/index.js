@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom'
-import { Card, CardContent, CardHeader, IconButton } from '@mui/material'
+import { Card, CardActions, CardContent, CardHeader, IconButton } from '@mui/material'
 import SettingsIcon from '@mui/icons-material/Settings'
 
-const Dashlet = ({ title, configLink, children, ...props }) => {
+const Dashlet = ({ title, configLink, children, cardActions, avatar, ...props }) => {
 
   const navigate = useNavigate()
 
@@ -15,10 +15,16 @@ const Dashlet = ({ title, configLink, children, ...props }) => {
             <SettingsIcon fontSize={"small"}/>
           </IconButton> : false
         }
+        avatar={avatar}
       />
       <CardContent>
         {children}
       </CardContent>
+      {cardActions ? (
+        <CardActions>
+          {cardActions}
+        </CardActions>
+      ) : ''}
     </Card>
   )
 }

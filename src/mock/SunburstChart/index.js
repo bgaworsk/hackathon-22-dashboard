@@ -5,7 +5,7 @@ import { Typography } from '@mui/material'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  height: 210px; 
+  height: 202px; 
   width: 100%;
   text-align: center;
   

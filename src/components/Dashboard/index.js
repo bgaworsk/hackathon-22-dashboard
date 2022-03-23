@@ -5,6 +5,7 @@ import Search from '../Search'
 import LineChart from '../../mock/LineChart'
 import SunburstChart from '../../mock/SunburstChart'
 import Conversion from '../../mock/Conversion'
+import Workflows from '../../mock/Workflows'
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -43,10 +44,8 @@ const Dashboard = () => {
           </Grid>
         </Grid>
         <Grid container spacing={2} mt={0}>
-          <Grid item xs={12} md={6}>
-            <Dashlet title={"Test"} configLink={"config/card1"}>
-              <Typography>…</Typography>
-            </Dashlet>
+          <Grid item xs={12} md={4}>
+            <Workflows />
           </Grid>
           <Grid item xs={12} md={6}>
             <Dashlet title={"Test"} configLink={"config/card1"}>

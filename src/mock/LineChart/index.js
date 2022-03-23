@@ -1,6 +1,7 @@
 import Dashlet from '../../components/Dashlet'
 import { ResponsiveLine } from '@nivo/line'
 import { generateDrinkStats } from '@nivo/generators'
+import StackedLineChartIcon from '@mui/icons-material/StackedLineChart'
 
 const LineChart = () => {
 
@@ -19,7 +20,7 @@ const LineChart = () => {
   }
 
   return (
-    <Dashlet title={"Performance"} configLink={"config/card1"}>
+    <Dashlet title={"Performance"} configLink={"config/card1"} avatar={<StackedLineChartIcon />}>
       <div style={{ width: '100%', height: '200px'}}>
         <ResponsiveLine {...props} />
       </div>
