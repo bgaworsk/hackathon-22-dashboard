@@ -30,14 +30,14 @@ const TabPanel = (props) => {
   )
 }
 
-const Metric = ({ value, title, trend, negative }) => (
+export const Metric = ({ value, title, trend, negative }) => (
   <Grid
     item xs={4}
     onClick={() => alert('Opening WF App …')}
     sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', cursor: 'pointer' }}
     mb={4}
   >
-    <Typography variant={'h3'} component={'body'}>
+    <Typography variant={'h3'} component={'div'}>
       {value}
     </Typography>
     <Typography variant={'overline'}>{title}</Typography>

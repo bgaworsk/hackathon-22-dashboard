@@ -1,4 +1,4 @@
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
+import { Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material'
 
 function createData(type, name, from, state) {
   return { type, name, from, state }

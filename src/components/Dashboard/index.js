@@ -6,6 +6,7 @@ import LineChart from '../../mock/LineChart'
 import SunburstChart from '../../mock/SunburstChart'
 import Conversion from '../../mock/Conversion'
 import Workflows from '../../mock/Workflows'
+import Campaigns from '../../mock/Campaigns'
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -36,10 +37,10 @@ const Dashboard = () => {
           <Grid item xs>
             <LineChart />
           </Grid>
-          <Grid item sx={{ width: '300px'}}>
+          <Grid item sx={{ width: '300px'}} xs={6} md={2}>
             <Conversion />
           </Grid>
-          <Grid item sx={{ width: '300px'}}>
+          <Grid item md={2} xs={6}>
             <SunburstChart />
           </Grid>
         </Grid>
@@ -48,9 +49,11 @@ const Dashboard = () => {
             <Workflows />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Dashlet title={"Test"} configLink={"config/card1"}>
-              <Typography>…</Typography>
-            </Dashlet>
+            <Campaigns />
+          </Grid>
+          <Grid item xs={12} md={2}>
+            <Campaigns />
+            <Campaigns />
           </Grid>
         </Grid>
       </Container>
