@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import AppHeader from './components/AppHeader'
 import Dashboard from './components/Dashboard'
+import { BrowserRouter as Router } from 'react-router-dom'
+import RoutesConfiguration from './components/RoutesConfiguration'
 
 const Container = styled.div`
   margin: 0;
@@ -12,10 +14,13 @@ const Container = styled.div`
 
 function App() {
   return (
-    <Container>
-      <AppHeader />
-      <Dashboard />
-    </Container>
+    <Router>
+      <Container>
+        <AppHeader />
+        <Dashboard />
+        <RoutesConfiguration />
+      </Container>
+    </Router>
   );
 }
 
