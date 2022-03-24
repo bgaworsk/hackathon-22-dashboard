@@ -30,9 +30,9 @@ const TabPanel = (props) => {
   )
 }
 
-export const Metric = ({ value, title, trend, negative }) => (
+export const Metric = ({ value, title, trend, negative, size = 4 }) => (
   <Grid
-    item xs={4}
+    item xs={size}
     onClick={() => alert('Opening WF App …')}
     sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', cursor: 'pointer' }}
     mb={4}

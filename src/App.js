@@ -16,7 +16,7 @@ const Container = styled.div`
 
 function App() {
 
-  const [ showDashboard, set ] = React.useState(false)
+  const [ showDashboard, set ] = React.useState(true)
 
   return (
     <Router>

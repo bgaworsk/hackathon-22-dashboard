@@ -7,6 +7,7 @@ import Conversion from '../../mock/Conversion'
 import Workflows from '../../mock/Workflows'
 import Campaigns from '../../mock/Campaigns'
 import JobsAndNotifications from '../../mock/JobsAndNotifications'
+import SitesAndTranslations from '../../mock/SitesAndTranslations'
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -57,7 +58,7 @@ const Dashboard = () => {
         </Grid>
         <Grid container spacing={2} mt={0}>
           <Grid item md={6}>
-            <JobsAndNotifications />
+            <SitesAndTranslations />
           </Grid>
           <Grid item md={4}>
             <JobsAndNotifications />
