@@ -1,0 +1,252 @@
+{
+  "name": "Repository",
+  "children": [
+    {
+      "name": "Site Content",
+      "children": [
+        {
+          "name": "Media",
+          "children": [
+            {
+              "name": "Images",
+              "children": [
+                {
+                  "name": "360° View",
+                  "loc": 16
+                },
+                {
+                  "name": "Gallery",
+                  "loc": 46
+                },
+                {
+                  "name": "Image Map",
+                  "loc": 4
+                },
+                {
+                  "name": "Picture",
+                  "loc": 110
+                }
+              ]
+            },
+            {
+              "name": "Videos",
+              "children": [
+                {
+                  "name": "Video",
+                  "loc": 9
+                }
+              ]
+            },
+            {
+              "name": "Assets",
+              "children": [
+                {
+                  "name": "Video Asset",
+                  "loc": 50
+                },
+                {
+                  "name": "Document Asset",
+                  "loc": 8
+                },
+                {
+                  "name": "Asset Category",
+                  "loc": 75
+                }
+              ]
+            },
+            {
+              "name": "Action",
+              "loc": 8
+            },
+            {
+              "name": "Download",
+              "loc": 10
+            },
+            {
+              "name": "Interactive",
+              "loc": 51
+            },
+            {
+              "name": "Audio",
+              "loc": 44
+            }
+          ]
+        },
+        {
+          "name": "Other",
+          "children": [
+            {
+              "name": "Article",
+              "loc" : 79
+            },
+            {
+              "name": "Page",
+              "loc" : 39
+            },
+            {
+              "name": "External Link",
+              "loc" : 11
+            },
+            {
+              "name": "Query List",
+              "loc" : 1
+            },
+            {
+              "name": "Teaser",
+              "loc" : 41
+            },
+            {
+              "name": "Collection",
+              "loc" : 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Technical",
+      "children": [
+        {
+          "name": "Location",
+          "loc": 5
+        },
+        {
+          "name": "Technical Image",
+          "loc": 32
+        },
+        {
+          "name": "Symbol",
+          "loc": 14
+        },
+        {
+          "name": "Settings",
+          "loc": 11
+        },
+        {
+          "name": "Resource Bundle",
+          "loc": 1
+        },
+        {
+          "name": "Layout Variant",
+          "loc": 77
+        },
+        {
+          "name": "Site Indicator",
+          "loc": 96
+        },
+        {
+          "name": "Site Map",
+          "loc": 22
+        },
+        {
+          "name": "Template Set",
+          "loc": 71
+        },
+        {
+          "name": "E-Mail Template",
+          "loc" : 19
+        },
+        {
+          "name": "Placeholder",
+          "loc" : 11
+        },
+        {
+          "name": "Theme",
+          "loc": 5
+        },
+        {
+          "name": "Folder Properties",
+          "loc": 37
+        },
+        {
+          "name": "Web Assets",
+          "children": [
+            {
+              "name": "CSS",
+              "loc": 21
+            },
+            {
+              "name": "HTML Fragment",
+              "loc": 3
+            },
+            {
+              "name": "JavaScript",
+              "loc": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Commerce",
+      "children": [
+        {
+          "name": "Category",
+          "loc": 14
+        },
+        {
+          "name": "Augmented Page",
+          "loc": 33
+        },
+        {
+          "name": "e-Marketing Spot",
+          "loc": 71
+        },
+        {
+          "name": "Product",
+          "loc": 33
+        },
+        {
+          "name": "Product Teaser",
+          "loc": 79
+        },
+        {
+          "name": "Product List",
+          "loc": 21
+        }
+      ]
+    },
+    {
+      "name": "Analytics",
+      "children": [
+        {
+          "name": "Analytics Event List",
+          "loc" : 10
+        },
+        {
+          "name": "Analytics Page List",
+          "loc" : 10
+        }
+      ]
+    },
+    {
+      "name": "Personalization",
+      "children": [
+        {
+          "name": "Customer Persona",
+          "loc" : 10
+        },
+        {
+          "name": "Customer Segment",
+          "loc" : 12
+        },
+        {
+          "name": "Dynamic Elastic Social List",
+          "loc" : 12
+        },
+        {
+          "name": "Person",
+          "loc" : 2
+        },
+        {
+          "name": "Personalized Content",
+          "loc" : 11
+        },
+        {
+          "name": "Personalized Search",
+          "loc" : 10
+        }
+      ]
+    }
+  ]
+}
