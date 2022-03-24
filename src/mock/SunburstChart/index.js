@@ -1,5 +1,4 @@
 import Dashlet from '../../components/Dashlet'
-import { generateLibTree } from '@nivo/generators'
 import { ResponsiveSunburst } from '@nivo/sunburst'
 import { Typography } from '@mui/material'
 import styled from 'styled-components'
