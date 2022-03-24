@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from '@mui/material'
+import { Box, Container, Fab, Grid, Typography } from '@mui/material'
 import styled from 'styled-components'
 import Search from '../Search'
 import LineChart from '../../mock/LineChart'
@@ -10,6 +10,7 @@ import JobsAndNotifications from '../../mock/JobsAndNotifications'
 import SitesAndTranslations from '../../mock/SitesAndTranslations'
 import ProjectAndTodos from '../../mock/ProjectAndTodos'
 import FavsEtc from '../../mock/FavsEtc'
+import AddIcon from '@mui/icons-material/Add'
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -70,6 +71,11 @@ const Dashboard = () => {
           </Grid>
         </Grid>
       </Container>
+      <Box sx={{ position: 'fixed', bottom: 20, right: 29}}>
+        <Fab color="primary" aria-label="add" sx={{ opacity: .3, '&:hover': {opacity: 1}}}>
+          <AddIcon />
+        </Fab>
+      </Box>
     </Wrapper>
   )
 }
