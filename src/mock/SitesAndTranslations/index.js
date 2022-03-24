@@ -145,7 +145,11 @@ const renderFlags = (index, flags, handleChange, upToDate) => {
         })}
       </div>
       <div className={'up-to-date'}>
-        <Metric title={'Up to date'} value={upToDate} size={12}/>
+        <Metric
+          title={'Up to date'}
+          value={new Intl.NumberFormat('en-US').format(upToDate)}
+          size={12}
+        />
       </div>
     </StyledFlags>
   )
