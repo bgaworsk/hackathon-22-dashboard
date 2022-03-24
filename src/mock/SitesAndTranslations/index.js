@@ -10,6 +10,7 @@ import { Metric } from '../Workflows'
 
 const StyledBox = styled(Box)`
   font-family: Roboto, sans-serif;
+  height: 310px;
 `
 
 const StyledFlags = styled.div`
@@ -94,6 +95,9 @@ const TabPanel = ({ children, value, index, ...other }) => {
           </div>
         </Box>
       )}
+      <Box textAlign={'right'}>
+        <Button size={'small'}>Use as preferred Site</Button>
+      </Box>
     </StyledPanel>
   )
 }
@@ -159,9 +163,6 @@ const SitesAndTranslations = () => {
     <Dashlet
       title={'Sites and Localization'}
       avatar={<TranslateIcon/>}
-      cardActions={
-        <Button size={'small'}>Use as preferred Site</Button>
-      }
     >
       <StyledBox
         sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 270 }}
