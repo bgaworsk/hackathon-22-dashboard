@@ -2,6 +2,8 @@ import { useParams, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { Card, CardContent, CardHeader, IconButton } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
+import Lottie from 'react-lottie-player'
+import worldJson from './world.json'
 
 const Wrapper = styled.div`
   position: fixed;
@@ -14,16 +16,17 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
   
   .dialog {
     width: 50vw;
-    height: 50vh;
+    min-height: 50vh;
+    z-index: 101;
   }
 `
 
 const Config = () => {
 
-  const {id} = useParams()
   const navigate = useNavigate()
 
   const onDismiss = () => {
@@ -45,10 +48,17 @@ const Config = () => {
                 <CloseIcon />
               </IconButton>
             }
-            title={`Configure ${id}`}
+            title={`Configuration`}
           />
           <CardContent>
-            …
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+              <Lottie
+                loop
+                animationData={worldJson}
+                play
+                style={{ width: 150, height: 150}}
+              />
+            </div>
           </CardContent>
         </Card>
       </div>

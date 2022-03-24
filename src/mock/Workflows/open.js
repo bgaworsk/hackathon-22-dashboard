@@ -1,4 +1,4 @@
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
+import { Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material'
 
 function createData(type, name, from, state) {
   return { type, name, from, state }
@@ -24,7 +24,7 @@ const Open = () => {
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell component="td" scope="row">
                 {row.type}
               </TableCell>
               <TableCell align="right">{row.name}</TableCell>
