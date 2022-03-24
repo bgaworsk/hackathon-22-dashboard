@@ -40,17 +40,27 @@ const FavsEtc = () => {
   }
 
   const myEditedData = [
-    createData("Article", "Contact Us All", "Calista"),
-    createData("Article", "Contact Us All", "Calista"),
-    createData("Article", "Contact Us All", "Calista"),
-    createData("Article", "Contact Us All", "Calista"),
-    createData("Article", "Contact Us All", "Calista"),
-    createData("Article", "Contact Us All", "Calista")
+    createData("Article", "Contact Us - Call center agents", "Calista"),
+    createData("Picture", "Pictures: Spring Collection", "Calista"),
+    createData("Article", "10 reasons you need more swag", "Calista"),
+    createData("Picture", "Hilarious Gif", "Calista"),
+    createData("Article", "Do you say gif or gif?", "Calista"),
+    createData("Picture", "T-2000 Collection", "Calista")
   ]
 
-  const bookmarksData = myEditedData
+  const bookmarksData = [
+    createData("Teaser", "My favourite teaser", 'Chef Corp.'),
+    createData("Article", "Everything you need to know", "SFRA"),
+    createData("Article", "Blue is the new black", "Calista"),
+    createData("Teaser", "10% Off Shawls", "SFRA")
+  ]
 
-  const searchesData = myEditedData
+  const searchesData = [
+    createData("Search", "Articles", 'All content'),
+    createData("Search", "Pictures", "Calista"),
+    createData("Search", "Pages", "Calista"),
+    createData("Search", "Videos", "All content")
+  ]
 
   return (
     <Dashlet

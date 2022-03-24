@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { Typography } from '@mui/material'
 import trashPandaJson from './trash-panda.json'
 import Lottie from 'react-lottie-player'
-import worldJson from '../Config/world.json'
 
 const Container = styled.div`
   display: flex;

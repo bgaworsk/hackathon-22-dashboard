@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { Card, CardContent, CardHeader, IconButton } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
