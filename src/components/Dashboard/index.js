@@ -8,6 +8,8 @@ import Workflows from '../../mock/Workflows'
 import Campaigns from '../../mock/Campaigns'
 import JobsAndNotifications from '../../mock/JobsAndNotifications'
 import SitesAndTranslations from '../../mock/SitesAndTranslations'
+import ProjectAndTodos from '../../mock/ProjectAndTodos'
+import FavsEtc from '../../mock/FavsEtc'
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -60,14 +62,11 @@ const Dashboard = () => {
           <Grid item md={6}>
             <SitesAndTranslations />
           </Grid>
-          <Grid item md={4}>
-            <JobsAndNotifications />
+          <Grid item md={3}>
+            <ProjectAndTodos />
           </Grid>
-          <Grid item md={2}>
-            <JobsAndNotifications />
-          </Grid>
-          <Grid item md={4}>
-            <JobsAndNotifications />
+          <Grid item md={3}>
+            <FavsEtc />
           </Grid>
         </Grid>
       </Container>

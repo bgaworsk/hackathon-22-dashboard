@@ -9,6 +9,7 @@ const Container = styled.div`
   align-items: center;
   
   svg {
+    margin-top: 50px;
     height: 120px;
   }
 `

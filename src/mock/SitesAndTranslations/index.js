@@ -1,7 +1,7 @@
 import React from 'react'
 import Dashlet from '../../components/Dashlet'
 import TranslateIcon from '@mui/icons-material/Translate'
-import { Box, FormControl, InputLabel, MenuItem, Select, Tab, Tabs } from '@mui/material'
+import { Box, Button, FormControl, InputLabel, MenuItem, Select, Tab, Tabs } from '@mui/material'
 import Flags from 'country-flag-icons/react/3x2'
 import { countries } from 'country-flag-icons'
 import styled from 'styled-components'
@@ -156,7 +156,13 @@ const SitesAndTranslations = () => {
   }
 
   return (
-    <Dashlet title={'Sites and Localization'} avatar={<TranslateIcon/>}>
+    <Dashlet
+      title={'Sites and Localization'}
+      avatar={<TranslateIcon/>}
+      cardActions={
+        <Button size={'small'}>Use as preferred Site</Button>
+      }
+    >
       <StyledBox
         sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 270 }}
       >
