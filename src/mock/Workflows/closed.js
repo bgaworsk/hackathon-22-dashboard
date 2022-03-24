@@ -1,14 +1,25 @@
 import { Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material'
+import reviewedPublication from './reviewed-publication.svg'
+import scheduledPublication from './scheduled-publication.svg'
+import translation from './translation.svg'
+import synch from './synch.svg'
 
-function createData(type, name, from, state) {
-  return { type, name, from, state }
+const typeToSvg = {
+  'Scheduled Publication': scheduledPublication,
+  'Reviewed Publication': reviewedPublication,
+  'Translation': translation,
+  'Synchronization': synch
+}
+
+function createData(type, name, from) {
+  return { type, name, from }
 }
 
 const Closed = () => {
 
   const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
+    createData('Scheduled Publication', 'Update Terms and Conditions', 'Teresa'),
+    createData('Translation', 'Translate latest Calista changes', 'Rocky Roullier'),
   ];
 
 
@@ -22,11 +33,10 @@ const Closed = () => {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.type}
+                <img src={typeToSvg[row.type]} alt={`Type ${row.type}`} />
               </TableCell>
-              <TableCell align="right">{row.name}</TableCell>
-              <TableCell align="right">{row.from}</TableCell>
-              <TableCell align="right">{row.state}</TableCell>
+              <TableCell>{row.name}</TableCell>
+              <TableCell>{row.from}</TableCell>
             </TableRow>
           ))}
         </TableBody>

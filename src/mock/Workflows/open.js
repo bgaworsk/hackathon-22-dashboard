@@ -1,4 +1,15 @@
 import { Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material'
+import reviewedPublication from './reviewed-publication.svg'
+import scheduledPublication from './scheduled-publication.svg'
+import translation from './translation.svg'
+import synch from './synch.svg'
+
+const typeToSvg = {
+  'Scheduled Publication': scheduledPublication,
+  'Reviewed Publication': reviewedPublication,
+  'Translation': translation,
+  'Synchronization': synch
+}
 
 function createData(type, name, from, state) {
   return { type, name, from, state }
@@ -7,11 +18,11 @@ function createData(type, name, from, state) {
 const Open = () => {
 
   const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    createData('Eclair', 262, 16.0, 24, 6.0),
-    createData('Cupcake', 305, 3.7, 67, 4.3),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
+    createData('Scheduled Publication', 'New Year´s campaign ', 'Jacques Fernet', 'Needs Review'),
+    createData('Reviewed Publication', 'Wintersale 2021 #3', 'Rocky Roullier', 'Needs Review'),
+    createData('Translation', 'Spring Collection 2021 ', 'Rocky Roullier', 'Needs Translation'),
+    createData('Translation', 'Wintersale 2021 #4', 'Caroline Smith', 'Needs Translation'),
+    createData('Synchronization', 'Spring Collection shoes: Vegan chelsea boots', 'Rocky Roullier', 'Needs Review'),
   ];
 
 
@@ -25,10 +36,10 @@ const Open = () => {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="td" scope="row">
-                {row.type}
+                <img src={typeToSvg[row.type]} alt={`Type ${row.type}`} />
               </TableCell>
-              <TableCell align="right">{row.name}</TableCell>
-              <TableCell align="right">{row.from}</TableCell>
+              <TableCell>{row.name}</TableCell>
+              <TableCell>{row.from}</TableCell>
               <TableCell align="right">{row.state}</TableCell>
             </TableRow>
           ))}
