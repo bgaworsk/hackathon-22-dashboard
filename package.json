@@ -2,6 +2,7 @@
   "name": "hackathon-22-dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bgaworsk.github.io/hackathon-22-dashboard",
   "dependencies": {
     "@mui/icons-material": "^5.5.1",
     "@mui/material": "^5.5.2",
@@ -16,6 +17,7 @@
     "@testing-library/user-event": "^13.2.1",
     "clsx": "^1.1.1",
     "country-flag-icons": "^1.4.25",
+    "gh-pages": "^3.2.3",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-big-calendar": "^0.39.5",
@@ -32,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
