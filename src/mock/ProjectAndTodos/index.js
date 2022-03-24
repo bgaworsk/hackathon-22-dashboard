@@ -55,7 +55,7 @@ const ProjectAndTodos = () => {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Open Todos"/>
-          <Tab label="Projects"/>
+          <Tab label="My Projects"/>
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
