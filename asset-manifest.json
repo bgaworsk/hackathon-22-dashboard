@@ -1,15 +1,23 @@
 {
   "files": {
     "main.css": "/hackathon-22-dashboard/static/css/main.5489103f.css",
-    "main.js": "/hackathon-22-dashboard/static/js/main.0c6ea918.js",
+    "main.js": "/hackathon-22-dashboard/static/js/main.617c94fa.js",
     "static/js/787.6cfa2dc2.chunk.js": "/hackathon-22-dashboard/static/js/787.6cfa2dc2.chunk.js",
+    "static/media/scheduled-publication.svg": "/hackathon-22-dashboard/static/media/scheduled-publication.47e09a5acb08df4e12c4c12259701598.svg",
+    "static/media/translation.svg": "/hackathon-22-dashboard/static/media/translation.b25e67016bd891e768538dc579ce2fc9.svg",
     "index.html": "/hackathon-22-dashboard/index.html",
+    "static/media/reviewed-publication.svg": "/hackathon-22-dashboard/static/media/reviewed-publication.cae07c21f72b95901dfb28d95c1c4470.svg",
+    "static/media/search.svg": "/hackathon-22-dashboard/static/media/search.ed61e0593b04d511d23fb30d44c46717.svg",
+    "static/media/teaser.svg": "/hackathon-22-dashboard/static/media/teaser.101101db27923cdc49d4b2edbc7c296d.svg",
+    "static/media/picture.svg": "/hackathon-22-dashboard/static/media/picture.237098fd2a988bd018783cb4db19689a.svg",
+    "static/media/article.svg": "/hackathon-22-dashboard/static/media/article.57331f81c290a3cb468b8fcf1ca5530c.svg",
+    "static/media/synch.svg": "/hackathon-22-dashboard/static/media/synch.026df9e746a46bbcdeb8ebd2d0ca1e8e.svg",
     "main.5489103f.css.map": "/hackathon-22-dashboard/static/css/main.5489103f.css.map",
-    "main.0c6ea918.js.map": "/hackathon-22-dashboard/static/js/main.0c6ea918.js.map",
+    "main.617c94fa.js.map": "/hackathon-22-dashboard/static/js/main.617c94fa.js.map",
     "787.6cfa2dc2.chunk.js.map": "/hackathon-22-dashboard/static/js/787.6cfa2dc2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5489103f.css",
-    "static/js/main.0c6ea918.js"
+    "static/js/main.617c94fa.js"
   ]
 }
