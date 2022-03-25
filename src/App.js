@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard'
 import { BrowserRouter as Router } from 'react-router-dom'
 import RoutesConfiguration from './components/RoutesConfiguration'
 import TabBar from './components/TabBar'
+import ContentApp from './mock/ContentApp'
 
 const Container = styled.div`
   margin: 0;
@@ -23,9 +24,7 @@ function App() {
       <Container>
         <AppHeader />
         <TabBar dashboardActive={showDashboard} toggle={set}/>
-        {showDashboard ? <Dashboard /> : (
-          <div style={{ backgroundColor: '#ffffff', width: '100vw', height: 'calc(100vh - 92px)' }} />
-        )}
+        {showDashboard ? <Dashboard /> : <ContentApp />}
         <RoutesConfiguration />
       </Container>
     </Router>
